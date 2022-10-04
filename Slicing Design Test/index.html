@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing Design Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav d-flex justify-space-evenly">
+                    <li class="d-flex align-items-center justify-center">
+                        <a href="#"> <span class="nav-text">Navigation</span> Link One</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-center">
+                        <a href="#"><span class="nav-text">Navigation</span> Link Two</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-center">
+                        <a href="#"><span class="nav-text">Navigation</span> Link Three</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1 class="hero-title">Do the right thing.</h1>
+            </section>
+            <section class="cta">
+                <div class="cta-header">
+                    <h2 class="cta-title">Credit Opportunities With Good Approval Odds <sup>†</sup></h2>
+                </div>
+                <div class="cta-detail">
+                    <div class="cta-review d-flex justify-space-between align-items-center">
+                        <h5>Barclaycard CashForward<sup>TM</sup> World MasterCard<sup>TM</sup></h5>
+                        <div class="d-flex justify-space-between align-items-center reviews">
+                            <span class="d-flex rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                </svg>
+                            </span>
+                            <span class="rating-number">3,252 Reviews</span>
+                        </div>
+                    </div>
+                    <div class="cta-desc d-flex align-items-center justify-space-between">
+                        <div class="d-flex cta-desc-card justify-space-between">
+                            <img src="img/credit-card.jpeg" class="credit-image" alt="credit card">
+                            <div class="odds">
+                                <span>Approval</span>
+                                <span>Odds†</span>
+                                <button class="odds-btn">Very Good</button>
+                            </div>
+                        </div>
+                        <div class="cta-desc-list">
+                            <ul>
+                                <li>Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after account opening.</li>
+                                <li>Earn unlimited 1.5% cash rewards on every purcahse.</li>
+                                <li>Earn unlimited 1.5% cash rewards on every...<a href="#" class="link">show more</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cta-btn-section">
+                        <button class="cta-btn">Apply</button>
+                    </div>
+
+                    <div class="divider">
+                        <hr>
+                    </div>
+
+                    <div class="cta-footer">
+                        <a href="#" class="link">See Details Rates and Fees</a>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>

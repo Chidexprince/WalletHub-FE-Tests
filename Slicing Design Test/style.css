@@ -1,0 +1,292 @@
+/* Page Styling */
+
+/* Fonts */
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ProximaNova/ProximaNova-Reg.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova Bold';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/ProximaNova/ProximaNova-Extrabold.otf') format('opentype');
+  }
+
+  /* Global style */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f6f9;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  /* Utility Style */
+  .d-flex {
+    display: flex;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .d-inline {
+    display: inline;
+  }
+
+  .d-none {
+    display: none;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .justify-space-around {
+    justify-content: space-around;
+  }
+  
+  .justify-space-between {
+    justify-content: space-between;
+  }
+
+  .justify-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  /* Page style */
+
+  header {
+    background-color: #23123A;
+    padding-top: 50px;
+  }
+
+  header nav ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+  }
+
+  header nav ul.nav li {
+    border-right: 1px solid #EDEFF0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Proxima Nova Bold', sans-serif;
+  }
+
+  .hero {
+    background: url('img/desktop-banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+
+  .hero > .hero-title {
+    color: #FFFFFF;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 8vw;
+    padding: 42px 34px;
+  }
+
+
+  .cta-header {
+    padding: 50px;
+  }
+
+  .cta > .cta-title {
+    color: #373737;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 30px;
+  }
+
+  .cta .cta-title sup {
+    font-size: 12px;
+  }
+
+  .cta > .cta-detail {
+    background-color: #fff;
+    padding: 50px;
+    margin: 0 50px 50px;
+  }
+
+  .cta-review h5 {
+    font-size: 20px;
+  }
+
+  .cta-review h5 sup {
+    font-size: 8px;
+  }
+
+  .rating {
+    margin-right: 10px;
+  }
+
+  .rating svg {
+    width: 20px;
+    height: 20px;
+    color: #59d8d1;
+  }
+
+  .credit-image {
+    height: 120px;
+  }
+
+  .cta-desc ul {
+    font-size: 20px; 
+    list-style: disc; 
+    line-height: 35px;
+    padding-left: 40px;
+    width: 100%;
+  }
+
+  .link {
+    color: #1194F6;
+    text-decoration: none;
+  }
+
+  .cta-desc .odds {
+    margin: 20px 100px 0 20px;
+    text-align: center;
+  }
+
+  .cta-desc .odds > span { 
+    display: block;
+    line-height: 20px;
+  }
+
+  .odds-btn {
+    border-radius: 20px;
+    width: 100px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    color: #fff;
+    background-color: #59d8d1;
+    margin-top: 10px;
+  }
+
+  .cta-desc-card, .cta-desc-list {
+    margin-top: 20px;
+  }
+
+
+  .cta-btn {
+    width: 25%;
+    margin-top: 20px;
+    border: 0;
+    padding: 15px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fa6e3d;
+    color: #fff;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    cursor: pointer;
+  }
+
+  .divider {
+    margin: 30px 0;
+  }
+
+  .cta-footer > .link {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+
+  /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+   a span.nav-text {
+        display: none;
+    }
+
+    .hero {
+        background: url('img/mobile-banner.svg');
+    }
+
+    .hero > .hero-title {
+        font-size: 16vw;
+    }
+
+    .reviews {
+        display: none;
+    }
+
+    .cta-header {
+        padding: 20px;
+      }
+
+    .cta > .cta-detail { 
+        margin: 0;
+     }
+
+    .cta-desc {
+        flex-direction: column;
+     }
+
+    .cta > .cta-detail {
+        padding: 50px 0;
+     }
+
+     .cta-desc .odds {
+        margin: 20px 0px 0px 0px;
+     }
+
+    .cta-review, .cta-btn-section  {
+        padding: 0 20px;
+     }
+
+     .cta-btn {
+        width: 100%;
+     }
+
+    .cta-desc ul {
+        width: 90%;
+     }
+
+    .cta-desc .odds > span {
+        display: inline;
+     }
+
+    .cta-desc-card img {
+        margin-left: 20px;
+    }
+
+    .cta-desc-card {
+      width: 100%;
+    }
+    
+}
